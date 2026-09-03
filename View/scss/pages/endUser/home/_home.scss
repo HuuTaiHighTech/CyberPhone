@@ -1,0 +1,22 @@
+.header {
+    background-color: #262626;
+    padding: 20px;
+
+    .logo {
+        color: red;
+        font-size: 24px;
+    }
+
+    .nav {
+        display: flex;
+        gap: 20px;
+
+        a {
+            color: white;
+
+            &:hover {
+                color: #f55f8d;
+            }
+        }
+    }
+}
