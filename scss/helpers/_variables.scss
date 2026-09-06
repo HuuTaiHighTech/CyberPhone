@@ -1,0 +1,68 @@
+$colors: (
+  primary: #f55f8d,
+  primary-hover: #f55f8d,
+  secondary: #f8ae56,
+  kicker: #f55f8d,
+);
+
+$colors-heading: (
+  1: #262626,
+  2: #ffffff,
+);
+
+$colors-text: (
+  1: #636363,
+  2: #ffffff,
+);
+
+$gradient-primary: linear-gradient(
+  to right,
+  map-get($colors, primary) 0%,
+  map-get($colors, secondary) 51%,
+  map-get($colors, primary) 100%
+);
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+
+$type-scale: (
+  display-large:   (size: 57px, line-height: 64px, spacing: -0.25px, weight: $font-weight-regular),
+  display-medium:  (size: 45px, line-height: 52px, spacing: 0,       weight: $font-weight-regular),
+  display-small:   (size: 36px, line-height: 44px, spacing: 0,       weight: $font-weight-regular),
+
+  headline-large:  (size: 32px, line-height: 40px, spacing: 0,       weight: $font-weight-regular),
+  headline-medium: (size: 28px, line-height: 36px, spacing: 0,       weight: $font-weight-regular),
+  headline-small:  (size: 24px, line-height: 32px, spacing: 0,       weight: $font-weight-regular),
+
+  title-large:     (size: 22px, line-height: 28px, spacing: 0,       weight: $font-weight-regular),
+  title-medium:    (size: 16px, line-height: 24px, spacing: 0.15px,  weight: $font-weight-medium),
+  title-small:     (size: 14px, line-height: 20px, spacing: 0.1px,   weight: $font-weight-medium),
+
+  label-large:     (size: 14px, line-height: 20px, spacing: 0.1px,   weight: $font-weight-medium),
+  label-medium:    (size: 12px, line-height: 16px, spacing: 0.5px,   weight: $font-weight-medium),
+  label-small:     (size: 11px, line-height: 16px, spacing: 0.5px,   weight: $font-weight-medium),
+
+  body-large:      (size: 16px, line-height: 24px, spacing: 0.5px,   weight: $font-weight-regular),
+  body-medium:     (size: 14px, line-height: 20px, spacing: 0.25px,  weight: $font-weight-regular),
+  body-small:      (size: 12px, line-height: 16px, spacing: 0.4px,   weight: $font-weight-regular),
+);
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,   // 4px
+  2: $spacer * .5,    // 8px
+  3: $spacer,         // 16px
+  4: $spacer * 1.5,   // 24px
+  5: $spacer * 3,     // 48px
+);
+//border
+$bd-1: 2px;
+$bd-2: 8px;
+//break points
+$breakpoints: (
+    // key : value
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px
+);//break points
