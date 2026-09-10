@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm | CyberPhone</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/flaticon.png"
+      type="image/x-icon"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+     <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="row content-header">
+            <div class="content_left col-2">
+              <a class="navbar-brand" href="../../index.html">
+                <img
+                  src="../../assets/images/logoheaderCyberPhone.png"
+                  alt="Logo"
+                />
+              </a>
+            </div>
+            <div class="content_center col-8">
+                <ul class="nav">
+                  <li>
+                    <a href="../../index.html" class="nav-item active">Home</a>
+                  </li>
+                  <li>
+                    <a href="./view/webClient/products.html" class="nav-item">Products</a>
+                  </li>
+                  <li>
+                    <a href="./view/webClient/contact.html" class="nav-item">Contact</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="content_right col-2">
+              <button class="cta">
+                <p>get a quote</p>
+              </button>
+              <i class="bi bi-cart"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="row g-4" id="product_list"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="../../Controller/webClient/main.js"></script>
+</body>
+</html>
