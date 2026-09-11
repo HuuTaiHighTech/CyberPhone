@@ -1,0 +1,33 @@
+@use '../components/button';
+@use '../helpers/variables';
+.content-header {
+    width: 100%;
+    border: 2px solid red;
+    text-align: center;
+    .content_left {
+        .navbar-brand img {
+                width: 150px;
+                height: auto;
+        }
+    }
+
+    .content_center {
+        // xử lý nội dung cột giữa
+        ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: 40px;
+        }  
+
+    }
+
+    .content_right {
+        // xử lý nội dung bên phải
+        button {
+            @extend .cta;
+            // background: map-get($map: $colors, $key: primary);
+        }
+    }
+}
