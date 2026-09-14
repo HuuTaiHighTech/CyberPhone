@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/flaticon.png"
+      type="image/x-icon"
+    />
+    <title>CyberPhone - Website bán điện thoại</title>
+    <meta
+      name="description"
+      content="Mua điện thoại chính hãng với nhiều ưu đãi."
+    />
+    <meta name="keywords" content="điện thoại, smartphone, iphone, samsung" />
+    <!-- icon bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="./assets/Flaticon/flaticon.css" />
+    <!-- Biên dịch file main -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header">
+        <div class="row content_header">
+          <!-- LOGO -->
+          <div class="col-2 content_left">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./assets/images/logoheaderCyberPhone.png"
+                class="img-fluid"
+                alt="CyberPhone"
+              />
+            </a>
+          </div>
+          <!-- NAVBAR -->
+          <div class="col-7 content_center">
+            <nav class="navbar navbar-expand-lg">
+              <!-- BUTTON HAMBURGER -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- MENU -->
+              <div
+                class="collapse navbar-collapse nav"
+                id="navbarSupportedContent"
+              >
+                <!-- LINK -->
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./view/webClient/products.html">
+                      Product
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./view/webClient/contact.html">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <!-- BUTTON + CART -->
+          <div class="col-3 content_right">
+            <button class="cta" type="button">Get a quote</button>
+            <div class="btn-cart">
+              <img src="./assets/images/image1.svg" alt="">
+              <span id="cart-count" class="count">24</span>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- js -->
+    <script type="module" src="./Controller/webClient/main.js"></script>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>

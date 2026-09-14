@@ -97,33 +97,49 @@ html, body {
   max-width: 100%;
 }
 
-.cta, .content-header .content_right button {
-  padding: 20px 35px;
+.cta, .content_header .content_right button {
+  padding: 10px 15px;
   background: linear-gradient(to right, #f55f8d 0%, #f8ae56 51%, #f55f8d 100%);
-  text-transform: uppercase;
   border: 1px solid transparent;
   border-radius: 30px;
   background-size: 200%;
   transition: all 0.5s;
 }
 
-.cta:hover, .content-header .content_right button:hover {
+.cta:hover, .content_header .content_right button:hover {
   background-position: right center;
 }
 
-.content-header {
-  width: 100%;
-  border: 2px solid red;
-  text-align: center;
+.content_header {
+  align-items: center;
 }
-.content-header .content_left .navbar-brand img {
-  width: 150px;
-  height: auto;
+.content_header .content_center .nav {
+  justify-content: center;
 }
-.content-header .content_center ul {
+.content_header .content_center .nav-link.active {
+  color: #f55f8d;
+}
+.content_header .content_right {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100%;
-  gap: 40px;
+  position: relative;
+  justify-content: end;
+  gap: 20px;
+}
+.content_header .content_right .btn-cart {
+  padding: 10px;
+  transition: all 0.5s;
+  border: 1px solid transparent;
+  background-size: 200%;
+}
+.content_header .content_right .btn-cart:hover {
+  border: 1px linear-gradient(to right, #f55f8d 0%, #f8ae56 51%, #f55f8d 100%) transparent;
+}
+.content_header .content_right .count {
+  position: absolute;
+  background-color: red;
+  padding: 0.5px 4px;
+  border-radius: 8px;
+  top: 0px;
+  right: 0px;
 }/*# sourceMappingURL=main.css.map */
