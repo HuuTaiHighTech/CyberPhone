@@ -1,0 +1,367 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/flaticon.png" type="image/x-icon" />
+    <title>adminProducts</title>
+
+    <meta name="description" content="Mua điện thoại chính hãng với nhiều ưu đãi." />
+    <meta name="keywords" content="điện thoại, smartphone, iphone, samsung" />
+
+    <!-- icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="./assets/Flaticon/flaticon.css" />
+
+    <!-- animate -->
+    <link href="../../css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../../Controller/admin/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!--//end-animate-->
+
+    <!-- Biên dịch file main -->
+    <link rel="stylesheet" href="./adminMain.css" />
+
+</head>
+
+<body class="cbp-spmenu-push">
+    <div class="main-content">
+
+        <!--left-fixed -navigation-->
+        <div class=" sidebar" role="navigation">
+            <div class="navbar-collapse">
+                <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="index.html" class="active"><i class="fa fa-home nav_icon"></i>Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-book nav_icon"></i>Product <span class="fa arrow"></span></a>
+
+                        </li>
+                        <li class="">
+                            <a href="#"><i class="fa fa-book nav_icon"></i>Abcdef <span class="fa arrow"></span></a>
+
+                        </li>
+
+                    </ul>
+                    <!-- //sidebar-collapse -->
+                </nav>
+            </div>
+        </div>
+        <!--left-fixed -navigation-->
+
+        <div class="sticky-header header-section ">
+            <div class="header-left">
+                <!--toggle button start-->
+                <button id="showLeftPush"><i class="fa fa-bars"></i></button>
+                <!--toggle button end-->
+                <!--logo -->
+                <div class="logo">
+                    <a href=""><img src="../../assets/images/logoheaderCyberPhone.png" alt=""></a>
+                </div>
+                <!--//logo-->
+                <!--search-box-->
+                <div class="search-box">
+                    <form class="input">
+                        <input class="sb-search-input input__field--madoka" placeholder="Search..." type="search"
+                            id="input-31">
+                        <label class="input__label" for="input-31">
+                            <svg class="graphic" width="100%" height="100%" viewBox="0 0 404 77"
+                                preserveAspectRatio="none">
+                                <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                            </svg>
+                        </label>
+                    </form>
+                </div>
+                <!--//end-search-box-->
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+
+        <div id="page-wrapper" style="min-height: 367px;">
+            <div class="main-page">
+                <div class="row row-table">
+                    <div class="col-md-4 widget">
+                        <div class="stats-left ">
+                            <h5>Today</h5>
+                            <h4>Sales</h4>
+                        </div>
+                        <div class="stats-right">
+                            <label> 45</label>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="col-md-4 widget states-mdl">
+                        <div class="stats-left">
+                            <h5>Today</h5>
+                            <h4>Visitors</h4>
+                        </div>
+                        <div class="stats-right">
+                            <label> 80</label>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="col-md-4 widget states-last">
+                        <div class="stats-left">
+                            <h5>Today</h5>
+                            <h4>Orders</h4>
+                        </div>
+                        <div class="stats-right">
+                            <label>51</label>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <!--TABLE SINH VIEN HERE-->
+                <div class="row">
+
+                    <div class="table-wrapper">
+                        <div class="table-title">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h2>QUẢN LÝ <b>SẢN PHẨM</b></h2>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
+                                            class="material-icons"></i> <span>THÊM MỚI</span></a>
+                                    <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i
+                                            class="material-icons"></i> <span>XÓA</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <table id="tableSinhVien" class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="selectAll">
+                                            <label for="selectAll"></label>
+                                        </span>
+                                    </th>
+                                    <th>HÌNH ẢNH</th>
+                                    <th>MÃ SẢN PHẨM</th>
+                                    <th>ABCD</th>
+                                    <th>THAO TÁC</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tblBody">
+                                <tr>
+                                    <td>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                            <label for="checkbox1"></label>
+                                        </span>
+                                    </td>
+                                    <td><img src="" alt=""></td>
+                                    <td>Nguyễn Văn A</td>
+                                    <td class="td-scores">6.4</td>
+                                    <td>
+                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
+                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                class="material-icons" data-toggle="tooltip" title="Delete"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="checkbox2" name="options[]" value="1">
+                                            <label for="checkbox2"></label>
+                                        </span>
+                                    </td>
+                                    <td><img src="" alt=""></td>
+                                    <td>Đỗ Văn Nhơn</td>
+                                    <td class="td-scores">8.2</td>
+                                    <td>
+                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
+                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                class="material-icons" data-toggle="tooltip" title="Delete"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="checkbox3" name="options[]" value="1">
+                                            <label for="checkbox3"></label>
+                                        </span>
+                                    </td>
+                                    <td><img src="" alt=""></td>
+                                    <td>Vin Thị Liên</td>
+                                    <td class="td-scores">3.4</td>
+                                    <td>
+                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
+                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                class="material-icons" data-toggle="tooltip" title="Delete"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="checkbox4" name="options[]" value="1">
+                                            <label for="checkbox4"></label>
+                                        </span>
+                                    </td>
+                                    <td><img src="images/a.png" alt=""></td>
+                                    <td>Đen Thị Giàu</td>
+                                    <td class="td-scores">9.8</td>
+                                    <td>
+                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
+                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                class="material-icons" data-toggle="tooltip" title="Delete"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="checkbox5" name="options[]" value="1">
+                                            <label for="checkbox5"></label>
+                                        </span>
+                                    </td>
+                                    <td><img src="images/1.png" alt=""></td>
+                                    <td>Ngô Văn Mạnh</td>
+                                    <td class="td-scores">2.4</td>
+                                    <td>
+                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
+                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                class="material-icons" data-toggle="tooltip" title="Delete"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="checkbox5" name="options[]" value="1">
+                                            <label for="checkbox5"></label>
+                                        </span>
+                                    </td>
+                                    <td><img src="images/2.png" alt=""></td>
+                                    <td>Văn Sỹ Lâm</td>
+                                    <td class="td-scores">1.4</td>
+                                    <td>
+                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
+                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                class="material-icons" data-toggle="tooltip" title="Delete"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="checkbox5" name="options[]" value="1">
+                                            <label for="checkbox5"></label>
+                                        </span>
+                                    </td>
+                                    <td><img src="images/3.png" alt=""></td>
+                                    <td>Bùi Đình Sen</td>
+                                    <td class="td-scores">9.4</td>
+                                    <td>
+                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
+                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                class="material-icons" data-toggle="tooltip" title="Delete"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="clearfix">
+                            <div class="hint-text">HIỂN THỊ <b>10</b> TRÊN <b>25</b> SẢN PHẨM</div>
+                            <ul class="pagination">
+                                <li class="page-item disabled"><a href="#">TRƯỚC</a></li>
+                                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                <li class="page-item"><a href="#" class="page-link">Sau</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--START CÁC NÚT ĐIỀU KHIỂN-->
+                <!-- <div class="modals widget-shadow">
+                    <button class="btn btn-success" id="btnSVCaoDiemNhat">Tìm SV cao nhất</button>
+                    <button class="btn btn-success" id="btnSVThapDiemNhat">Tìm SV điểm thấp nhất</button>
+                    <button class="btn btn-success" id="btnSoSVGioi">Đếm SV Giỏi</button>
+                    <button class="btn btn-success" id="btnSVDiemHon5">Danh sách SV điểm TB lớn hơn 5</button>
+                    <button class="btn btn-success" id="btnSapXepTang">Sắp xếp tăng dần</button>
+                </div> -->
+                <!--END CÁC NÚT ĐIỀU KHIỂN-->
+
+                <!-- footer start  -->
+                <div class="footer">
+                    <p>@CyberPhone - Website bán điện thoại</p>
+                </div>
+                <!-- footer end -->
+
+            </div>
+
+
+            <!-- js -->
+            <script type="module" src="./Controller/webClient/main.js"></script>
+
+            <!-- bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
+
+            <!-- axios -->
+            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+            <!-- Classie -->
+            <script src="../../Controller/admin/classie.js"></script>
+            <script>
+                var menuLeft = document.getElementById('cbp-spmenu-s1'),
+                    showLeftPush = document.getElementById('showLeftPush'),
+                    body = document.body;
+
+                showLeftPush.onclick = function () {
+                    classie.toggle(this, 'active');
+                    classie.toggle(body, 'cbp-spmenu-push-toright');
+                    classie.toggle(menuLeft, 'cbp-spmenu-open');
+                    disableOther('showLeftPush');
+                };
+
+
+                function disableOther(button) {
+                    if (button !== 'showLeftPush') {
+                        classie.toggle(showLeftPush, 'disabled');
+                    }
+                }
+            </script>
+
+
+            <!-- js  -->
+            <script src="/CyberPhone/Controller/admin/adminMain.js"></script>
+
+</body>
+
+</html>
