@@ -62,11 +62,6 @@
                             <a href="#"><i class="fa fa-book nav_icon"></i>Product <span class="fa arrow"></span></a>
 
                         </li>
-                        <li class="">
-                            <a href="#"><i class="fa fa-book nav_icon"></i>Abcdef <span class="fa arrow"></span></a>
-
-                        </li>
-
                     </ul>
                     <!-- //sidebar-collapse -->
                 </nav>
@@ -105,195 +100,39 @@
 
         <div id="page-wrapper" style="min-height: 367px;">
             <div class="main-page">
-                <div class="row row-table">
-                    <div class="col-md-4 widget">
-                        <div class="stats-left ">
-                            <h5>Today</h5>
-                            <h4>Sales</h4>
-                        </div>
-                        <div class="stats-right">
-                            <label> 45</label>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="col-md-4 widget states-mdl">
-                        <div class="stats-left">
-                            <h5>Today</h5>
-                            <h4>Visitors</h4>
-                        </div>
-                        <div class="stats-right">
-                            <label> 80</label>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="col-md-4 widget states-last">
-                        <div class="stats-left">
-                            <h5>Today</h5>
-                            <h4>Orders</h4>
-                        </div>
-                        <div class="stats-right">
-                            <label>51</label>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
                 <!--TABLE SINH VIEN HERE-->
                 <div class="row">
-
                     <div class="table-wrapper">
                         <div class="table-title">
                             <div class="row">
-                                <div class="col-sm-6">
-                                    <h2>QUẢN LÝ <b>SẢN PHẨM</b></h2>
+                                <div class="col-sm-9">
+                                    <h2>PRODUCT MANAGEMENT</h2>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col-sm-3">
                                     <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
-                                            class="material-icons"></i> <span>THÊM MỚI</span></a>
+                                            class="material-icons"></i> <span>CREAT</span></a>
                                     <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i
-                                            class="material-icons"></i> <span>XÓA</span></a>
+                                            class="material-icons"></i> <span>DELETE</span></a>
                                 </div>
                             </div>
                         </div>
-                        <table id="tableSinhVien" class="table table-striped table-hover">
+                        <table class="table table-bordered mt-5">
                             <thead>
                                 <tr>
-                                    <th>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="selectAll">
-                                            <label for="selectAll"></label>
-                                        </span>
-                                    </th>
-                                    <th>HÌNH ẢNH</th>
-                                    <th>MÃ SẢN PHẨM</th>
-                                    <th>ABCD</th>
-                                    <th>THAO TÁC</th>
+                                    <th>ID</th>
+                                    <th>Img</th>
+                                    <th>Name</th>
+                                    <!-- <th>Price</th>
+                                    <th>Description</th>
+                                    <th>Type</th> -->
+                                    <th>Feature</th>
                                 </tr>
                             </thead>
-                            <tbody id="tblBody">
-                                <tr>
-                                    <td>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="checkbox1" name="options[]" value="1">
-                                            <label for="checkbox1"></label>
-                                        </span>
-                                    </td>
-                                    <td><img src="" alt=""></td>
-                                    <td>Nguyễn Văn A</td>
-                                    <td class="td-scores">6.4</td>
-                                    <td>
-                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
-                                                class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
-                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
-                                                class="material-icons" data-toggle="tooltip" title="Delete"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="checkbox2" name="options[]" value="1">
-                                            <label for="checkbox2"></label>
-                                        </span>
-                                    </td>
-                                    <td><img src="" alt=""></td>
-                                    <td>Đỗ Văn Nhơn</td>
-                                    <td class="td-scores">8.2</td>
-                                    <td>
-                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
-                                                class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
-                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
-                                                class="material-icons" data-toggle="tooltip" title="Delete"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="checkbox3" name="options[]" value="1">
-                                            <label for="checkbox3"></label>
-                                        </span>
-                                    </td>
-                                    <td><img src="" alt=""></td>
-                                    <td>Vin Thị Liên</td>
-                                    <td class="td-scores">3.4</td>
-                                    <td>
-                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
-                                                class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
-                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
-                                                class="material-icons" data-toggle="tooltip" title="Delete"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="checkbox4" name="options[]" value="1">
-                                            <label for="checkbox4"></label>
-                                        </span>
-                                    </td>
-                                    <td><img src="images/a.png" alt=""></td>
-                                    <td>Đen Thị Giàu</td>
-                                    <td class="td-scores">9.8</td>
-                                    <td>
-                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
-                                                class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
-                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
-                                                class="material-icons" data-toggle="tooltip" title="Delete"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="checkbox5" name="options[]" value="1">
-                                            <label for="checkbox5"></label>
-                                        </span>
-                                    </td>
-                                    <td><img src="images/1.png" alt=""></td>
-                                    <td>Ngô Văn Mạnh</td>
-                                    <td class="td-scores">2.4</td>
-                                    <td>
-                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
-                                                class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
-                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
-                                                class="material-icons" data-toggle="tooltip" title="Delete"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="checkbox5" name="options[]" value="1">
-                                            <label for="checkbox5"></label>
-                                        </span>
-                                    </td>
-                                    <td><img src="images/2.png" alt=""></td>
-                                    <td>Văn Sỹ Lâm</td>
-                                    <td class="td-scores">1.4</td>
-                                    <td>
-                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
-                                                class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
-                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
-                                                class="material-icons" data-toggle="tooltip" title="Delete"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="checkbox5" name="options[]" value="1">
-                                            <label for="checkbox5"></label>
-                                        </span>
-                                    </td>
-                                    <td><img src="images/3.png" alt=""></td>
-                                    <td>Bùi Đình Sen</td>
-                                    <td class="td-scores">9.4</td>
-                                    <td>
-                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
-                                                class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
-                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
-                                                class="material-icons" data-toggle="tooltip" title="Delete"></i></a>
-                                    </td>
-                                </tr>
+                            <tbody id="tblProduct">
                             </tbody>
                         </table>
                         <div class="clearfix">
-                            <div class="hint-text">HIỂN THỊ <b>10</b> TRÊN <b>25</b> SẢN PHẨM</div>
+                            <!-- <div class="hint-text">HIỂN THỊ <b>10</b> TRÊN <b>25</b> SẢN PHẨM</div>
                             <ul class="pagination">
                                 <li class="page-item disabled"><a href="#">TRƯỚC</a></li>
                                 <li class="page-item"><a href="#" class="page-link">1</a></li>
@@ -302,10 +141,11 @@
                                 <li class="page-item"><a href="#" class="page-link">4</a></li>
                                 <li class="page-item"><a href="#" class="page-link">5</a></li>
                                 <li class="page-item"><a href="#" class="page-link">Sau</a></li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                 </div>
+
                 <!--START CÁC NÚT ĐIỀU KHIỂN-->
                 <!-- <div class="modals widget-shadow">
                     <button class="btn btn-success" id="btnSVCaoDiemNhat">Tìm SV cao nhất</button>
@@ -325,8 +165,8 @@
             </div>
 
 
-            <!-- js -->
-            <script type="module" src="./Controller/webClient/main.js"></script>
+            <!-- js
+            <script type="module" src="./Controller/webClient/main.js"></script> -->
 
             <!-- bootstrap -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -359,8 +199,15 @@
             </script>
 
 
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.19.0/axios.min.js"
+                integrity="sha512-1PySIDbtpe3dqJixTAKYVuIJFjhCh6B++coWLFxuQh1es5sQo6eMciiiR8ppJQE4/goMfeJgKZN0ajzWWwuCGg=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
             <!-- js  -->
-            <script src="/CyberPhone/Controller/admin/adminMain.js"></script>
+            <script src="../../Controller/admin/productController.js"></script>
+            <script src="../../Controller/admin/callAPI.js"></script>
+            <script src="../../Controller/admin/validation.js"></script>
+            <script src="../../Controller/admin/adminMain.js"></script>
 
 </body>
 
