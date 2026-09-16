@@ -1,38 +1,15 @@
 @use '../components/button';
 @use '../helpers/variables';
-// .content-header {
-//     width: 100%;
-//     border: 2px solid red;
-//     text-align: center;
-//     .content_left {
-//         .navbar-brand img {
-//                 width: 150px;
-//                 height: auto;
-//         }
-//     }
 
-//     .content_center {
-//         // xử lý nội dung cột giữa
-//         ul{
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         height: 100%;
-//         gap: 40px;
-//         }  
-
-//     }
-
-//     .content_right {
-//         // xử lý nội dung bên phải
-//         button {
-//             @extend .cta;
-//             // background: map-get($map: $colors, $key: primary);
-//         }
-//     }
-// }
-
+.section_header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
 .content_header {
+  display: flex;
   align-items: center;
 
 
@@ -40,9 +17,15 @@
     .nav{
         justify-content: center;
     }
-    .nav-link.active {
-    color: map-get($colors, primary);
-  }
+    .nav-link {
+      padding: 55px 15px;
+      transition: color 0.3s;
+
+      &:hover,
+      &.active {
+        color: map-get($colors, primary) !important;
+      }
+    }
 }
 .content_right {
   display: flex;
@@ -54,23 +37,29 @@
     @extend .cta;
   }
   .btn-cart {
-  padding: 10px;
-        transition: all 0.5s;
+    padding: 10px;
+    transition: all 0.5s;
     border: 1px solid transparent;
     background-size: 200%;
+    border-radius: 8px;
+    .bi-cart3 {
+      font-size: 24px;
+      background: $gradient-primary;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   &:hover {
-    
-    // border-color: map-get($map: $colors, $key: primary);
-    border: 1px $gradient-primary transparent;
+      background: rgba(0, 0, 0, 0.05);
     
   }
 }
   .count {
     position: absolute;
-    background-color: red;
+    background-color: #ff7a7a;
     padding: 0.5px 4px;
-    border-radius: 8px;
-    top: 0px;
+    border-radius: 50%;
+    top: 5px;
     right: 0px;
   }
   

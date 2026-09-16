@@ -43,47 +43,84 @@
     />
     <!-- Flaticon -->
     <link rel="stylesheet" href="./assets/Flaticon/flaticon.css" />
+    <!-- Own Carousel -->
+     <link rel="stylesheet" href="./assets/animate/owl.carousel.min.css">
+     <link rel="stylesheet" href="./assets/animate/owl.theme.default.min.css">
     <!-- Biên dịch file main -->
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <div class="row content-header">
-            <div class="content_left col-2">
-              <a class="navbar-brand" href="#">
-                <img
-                  src="./assets/images/logoheaderCyberPhone.png"
-                  alt="Logo"
-                />
-              </a>
-            </div>
-            <div class="content_center col-8">
-                <ul class="nav">
-                  <li>
-                    <a href="./index.html" class="nav-item active">Home</a>
+    <div class="container">
+      <header>
+        <div class="row content_header">
+          <!-- LOGO -->
+          <div class="col-2 content_left">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./assets/images/logoheaderCyberPhone.png"
+                class="img-fluid"
+                alt="CyberPhone"
+              />
+            </a>
+          </div>
+          <!-- NAVBAR -->
+          <div class="col-7 content_center">
+            <nav class="navbar navbar-expand-lg">
+              <!-- BUTTON HAMBURGER -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- MENU -->
+              <div
+                class="collapse navbar-collapse nav"
+                id="navbarSupportedContent"
+              >
+                <!-- LINK -->
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#" aria-current="page">Home</a>
                   </li>
-                  <li>
-                    <a href="./view/webClient/products.html" class="nav-item">Products</a>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./view/webClient/products.html">
+                      Product
+                    </a>
                   </li>
-                  <li>
-                    <a href="./view/webClient/contact.html" class="nav-item">Contact</a>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./view/webClient/contact.html">
+                      Contact
+                    </a>
                   </li>
                 </ul>
-            </div>
-            <div class="content_right col-2">
-              <button class="cta">
-                <p>get a quote</p>
-              </button>
-              <i class="bi bi-cart"></i>
+              </div>
+            </nav>
+          </div>
+          <!-- BUTTON + CART -->
+          <div class="col-3 content_right">
+            <button class="cta" type="button">Get a quote</button>
+            <div class="btn-cart" aria-label="Shopping cart" role="img">
+              <i class="bi bi-cart3" aria-hidden="true"></i>
+              <span id="cart-count" class="count">10</span>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
+      </header>
+    </div>
     <!-- js -->
     <script type="module" src="./Controller/webClient/main.js"></script>
+    <!-- jquery -->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+     <script src="./assets/animate/owl.carousel.min.js"></script>
     <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

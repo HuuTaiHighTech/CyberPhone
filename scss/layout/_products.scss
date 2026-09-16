@@ -1,0 +1,113 @@
+@use '../components/button';
+@import "../helpers/variables";
+
+.section_product{
+    background-image: url(../assets/images/carousel-bg.png);
+    background-size: 100%;
+    padding-top: 180px;
+    overflow: hidden;
+    background-position: top;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+
+    .breadcrumb-item.active {
+        color: map-get($colors, primary) !important;
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: none;
+    }
+
+    .breadcrumb-separator {
+        display: flex;
+        align-items: center;
+        padding: 0 8px;
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+.section_product {
+    .search {
+        position: relative;
+        border: 1px solid transparent;
+        outline: none;
+        box-shadow: none;
+        width: 100%;
+        max-width: 565px;
+        margin: 0 auto;
+        border-radius: 8px;
+        // background: $gradient-primary;
+    .input_search {
+        width: 100%;
+        padding: 12px 20px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        background:
+            linear-gradient(#ffffff, #ffffff) padding-box,
+            $gradient-primary border-box;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .btn_search {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        border-radius: 50%;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%); 
+        transition: all 0.3s;
+        background: map-get($colors, primary);
+        &:hover {
+        background: map-get($colors, primary-hover);
+        }
+    }
+    }
+    .type_product {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+    }
+    .btn_view {
+        @extend .cta;
+        background: map-get($colors, primary);
+        &:hover {
+            background: map-get($colors, primary-hover);
+        }
+    }
+    .txt_type {
+        color: map-get($colors, primary);
+    }
+
+    .product_group {
+        margin-top: 24px;
+    }
+
+    .product_group_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    .product_group_title {
+        margin: 0;
+        color: map-get($colors, primary);
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+}
