@@ -165,7 +165,7 @@ button#showLeftPush:hover {
 /*--//push-menu-css--*/
 
 #page-wrapper {
-    padding: 7em 2em 2em;
+    padding: 3em 2em 2em;
     /* background-color: #F1F1F1; */
 }
 
@@ -557,6 +557,100 @@ h4.title {
 /*--map--*/
 .map {
     padding: 1em;
+}
+
+/* MODAL STYLES (Đóng vai trò che phủ màn hình) */
+.modal {
+    display: none;
+    /* Mặc định ẩn modal */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Nền tối mờ */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hộp thoại chứa form */
+.modal-content {
+    background-color: #fff;
+    padding: 2.5em;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+    max-height: 95vh;
+    /* Giới hạn chiều cao tối đa 85% màn hình */
+    overflow-y: auto;
+    /* Hiện thanh cuộn đứng khi nội dung tràn */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #888;
+}
+
+/* Thiết kế Input Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Khống chế kích thước ảnh xem trước */
+#imagePreview,
+#updateImagePreview {
+    max-height: 85%;
+    /* Giới hạn chiều cao ảnh vừa phải */
+    object-fit: contain;
+    /* Giữ đúng tỉ lệ ảnh, không bị méo */
+    width: 100%;
 }
 
 /*  */

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/images/flaticon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../../assets/Flaticon/flaticon.css" type="image/x-icon" />
     <title>adminProducts</title>
 
     <meta name="description" content="Mua điện thoại chính hãng với nhiều ưu đãi." />
@@ -32,7 +32,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 
     <!-- Flaticon -->
-    <link rel="stylesheet" href="./assets/Flaticon/flaticon.css" />
+    <link rel="stylesheet" href="../../assets/Flaticon/flaticon.css" />
 
     <!-- animate -->
     <link href="../../css/animate.css" rel="stylesheet" type="text/css" media="all">
@@ -109,8 +109,8 @@
                                     <h2>PRODUCT MANAGEMENT</h2>
                                 </div>
                                 <div class="col-sm-3">
-                                    <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
-                                            class="material-icons"></i> <span>CREAT</span></a>
+                                    <a href="#addEmployeeModal" id="openModalBtn" class="btn btn-success"
+                                        data-toggle="modal"><i class="material-icons"></i> <span>CREATE</span></a>
                                     <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i
                                             class="material-icons"></i> <span>DELETE</span></a>
                                 </div>
@@ -146,15 +146,133 @@
                     </div>
                 </div>
 
-                <!--START CÁC NÚT ĐIỀU KHIỂN-->
-                <!-- <div class="modals widget-shadow">
-                    <button class="btn btn-success" id="btnSVCaoDiemNhat">Tìm SV cao nhất</button>
-                    <button class="btn btn-success" id="btnSVThapDiemNhat">Tìm SV điểm thấp nhất</button>
-                    <button class="btn btn-success" id="btnSoSVGioi">Đếm SV Giỏi</button>
-                    <button class="btn btn-success" id="btnSVDiemHon5">Danh sách SV điểm TB lớn hơn 5</button>
-                    <button class="btn btn-success" id="btnSapXepTang">Sắp xếp tăng dần</button>
-                </div> -->
-                <!--END CÁC NÚT ĐIỀU KHIỂN-->
+                <!-- MODAL CONTAINER (Form ẩn mặc định) -->
+                <div id="productModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Thêm mới sản phẩm</h5>
+                            <span class="close-btn" id="closeHeaderBtn">&times;</span>
+                        </div>
+
+                        <!-- FORM NHẬP THÔNG TIN -->
+                        <form id="addProductForm">
+                            <!-- ID -->
+                            <div class="form-group">
+                                <label for="productID">ID: </label>
+                                <input type="text" class="form-control" id="id" placeholder="Nhập ID sản phẩm">
+                                <p id="err_required_id" class="text text-danger"></p>
+                            </div>
+                            <!-- Name  -->
+                            <div class="form-group">
+                                <label for="productName">Name: </label>
+                                <input type="text" class="form-control" id="name" placeholder="Nhập tên sản phẩm">
+                                <p id="err_required_name" class="text text-danger"></p>
+                            </div>
+                            <!-- Price  -->
+                            <div class="form-group">
+                                <label for="productPrice">Price:</label>
+                                <input type="number" class="form-control" id="price" placeholder="Nhập giá bán">
+                                <p id="err_required_price" class="text text-danger"></p>
+                            </div>
+                            <!-- Img  -->
+                            <div class="form-group">
+                                <label for="productImg">Img: </label>
+                                <!-- Input chọn file ảnh -->
+                                <input type="file" class="form-control" id="productImage" accept="image/*">
+
+                                <!-- Thẻ hiển thị hình ảnh xem trước -->
+                                <div class="image-preview-container">
+                                    <img class="form-control" id="imagePreview" src="#" alt="Xem trước hình ảnh"
+                                        style="display: none; max-width: 100%; height: 100%; margin-top: 10px; border-radius: 4px; object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Description -->
+                            <div class="form-group">
+                                <label for="productDescription">Description: </label>
+                                <input type="text" class="form-control" id="description" placeholder="Nhập mô tả">
+                                <p id="err_required_description" class="text text-danger"></p>
+                            </div>
+                            <!-- Type -->
+                            <div class="form-group">
+                                <label for="productType">Type: </label>
+                                <select id="type" class="form-control">
+                                    <option value="">-- Chọn loại sản phẩm --</option>
+                                    <option value="Iphone">Iphone</option>
+                                    <option value="Samsung">Samsung</option>
+                                </select>
+                            </div>
+
+                            <!-- CÁC NÚT THAO TÁC -->
+                            <div class="modal-actions">
+                                <button id="btnCreate" type="submit" class="btn btn-primary">Create</button>
+                                <button type="button" id="cancelBtn" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- MODAL UPDATE (Form Chỉnh Sửa) -->
+                <div id="updateProductModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Chỉnh sửa sản phẩm</h5>
+                            <span class="close-btn" id="closeUpdateHeaderBtn">&times;</span>
+                        </div>
+
+                        <form id="updateProductForm">
+                            <!-- ID (Khóa không cho sửa ID) -->
+                            <div class="form-group">
+                                <label for="updateID">ID: </label>
+                                <input type="text" class="form-control" id="update_id" readonly>
+                            </div>
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="updateName">Name: </label>
+                                <input type="text" class="form-control" id="update_name"
+                                    placeholder="Nhập tên sản phẩm">
+                                <p id="err_required_nameUP" class="text text-danger"></p>
+                            </div>
+                            <!-- Price -->
+                            <div class="form-group">
+                                <label for="updatePrice">Price:</label>
+                                <input type="number" class="form-control" id="update_price" placeholder="Nhập giá bán">
+                                <p id="err_required_priceUP" class="text text-danger"></p>
+                            </div>
+                            <!-- Img -->
+                            <div class="form-group">
+                                <label for="updateImg">Img: </label>
+                                <input type="file" class="form-control" id="updateProductImage" accept="image/*">
+                                <div class="image-preview-container">
+                                    <img class="form-control" id="updateImagePreview" src="#" alt="Xem trước hình ảnh"
+                                        style="display: none; max-width: 100%; height: 100%; margin-top: 10px; border-radius: 4px; object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Description -->
+                            <div class="form-group">
+                                <label for="updateDescription">Description: </label>
+                                <input type="text" class="form-control" id="update_description"
+                                    placeholder="Nhập mô tả">
+                                <p id="err_required_descriptionUP" class="text text-danger"></p>
+                            </div>
+                            <!-- Type -->
+                            <div class="form-group">
+                                <label for="updateType">Type: </label>
+                                <select id="update_type" class="form-control">
+                                    <option value="">-- Chọn loại sản phẩm --</option>
+                                    <option value="Iphone">Iphone</option>
+                                    <option value="Samsung">Samsung</option>
+                                </select>
+                            </div>
+
+                            <!-- NÚT THAO TÁC (Chỉ chứa nút Update) -->
+                            <div class="modal-actions">
+                                <button id="btnUpdate" type="button" class="btn btn-success">Update</button>
+                                <button type="button" id="cancelUpdateBtn" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 
                 <!-- footer start  -->
                 <div class="footer">
@@ -204,10 +322,8 @@
                 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
             <!-- js  -->
-            <script src="../../Controller/admin/productController.js"></script>
-            <script src="../../Controller/admin/callAPI.js"></script>
-            <script src="../../Controller/admin/validation.js"></script>
-            <script src="../../Controller/admin/adminMain.js"></script>
+
+            <script type="module" src="../../Controller/admin/adminMain.js"></script>
 
 </body>
 
