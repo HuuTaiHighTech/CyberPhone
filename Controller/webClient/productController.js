@@ -6,4 +6,12 @@ const getList = () => {
         url: `${URL_API}/api/ProductApi/getall`,
     })
 };
-export {getList};
+
+const getProductById = (id) => {
+    return axios({
+        method: "get",
+        url: `${URL_API}/api/ProductApi/get/${id}`,
+    });
+};
+
+export { getList, getProductById };

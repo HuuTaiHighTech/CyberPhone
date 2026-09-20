@@ -80,9 +80,47 @@
         justify-content: space-between;
         margin-top: 16px;
     }
+
+    .product-filter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin: 32px 0 24px;
+    }
+
+    .product-filter-button {
+        padding: 10px 20px;
+        border: 1px solid map-get($colors, primary);
+        border-radius: 30px;
+        color: #000000;
+        background: transparent;
+        transition: all 0.3s;
+
+        &:hover {
+            border-color: map-get($colors, primary);
+            box-shadow: 0 0 0 3px rgba(245, 95, 141, 0.2);
+        }
+
+        &.active {
+            color: #ffffff;
+            background: map-get($colors, primary);
+            border-color: map-get($colors, primary);
+        }
+    }
     .btn_view {
         @extend .cta;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
         background: map-get($colors, primary);
+
+        img {
+            width: 16px;
+            height: 16px;
+            object-fit: contain;
+        }
+
         &:hover {
             background: map-get($colors, primary-hover);
         }
@@ -108,6 +146,14 @@
         color: map-get($colors, primary);
         font-size: 24px;
         font-weight: 600;
+    }
+
+    .product_item {
+        display: flex;
+
+        .card {
+            width: 100%;
+        }
     }
 
 }

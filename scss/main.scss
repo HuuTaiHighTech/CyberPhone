@@ -13,7 +13,9 @@
 
 //Layouts
 @import "./layout/header.scss";
-@import "./layout/products";
-//Pages
+@import "./layout/footer.scss";
 
+//Pages
+@import "./layout/products";
+@import "./layout/productDetail";
 //Theme

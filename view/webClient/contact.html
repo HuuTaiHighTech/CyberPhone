@@ -52,6 +52,7 @@
         <div class="row content_header">
           <!-- LOGO -->
           <div class="col-2 content_left">
+            <div class="logo-wrapper">
             <a class="navbar-brand" href="../../index.html">
               <img
                 src="../../assets/images/logoheaderCyberPhone.png"
@@ -59,6 +60,7 @@
                 alt="CyberPhone"
               />
             </a>
+            </div>
           </div>
           <!-- NAVBAR -->
           <div class="col-7 content_center">
@@ -99,22 +101,30 @@
                     </a>
                   </li>
                 </ul>
+                <div class="mobile_header_actions">
+                  <button class="cta" type="button">Get a quote</button>
+                  <a class="btn-cart" href="../../view/webClient/cart.html" aria-label="Shopping cart" role="img">
+                    <i class="bi bi-cart3" aria-hidden="true"></i>
+                    <span class="count">10</span>
+                  </a>
+                </div>
               </div>
             </nav>
           </div>
           <!-- BUTTON + CART -->
           <div class="col-3 content_right">
             <button class="cta" type="button">Get a quote</button>
-            <div class="btn-cart" aria-label="Shopping cart" role="img">
+            <a class="btn-cart" href="../../view/webClient/cart.html" aria-label="Shopping cart" role="img">
               <i class="bi bi-cart3" aria-hidden="true"></i>
               <span id="cart-count" class="count">10</span>
-            </div>
+            </a>
           </div>
         </div>
       </header>
     </div>
     <!-- js -->
-    <script type="module" src="./Controller/webClient/main.js"></script>
+    <script type="module" src="../../Controller/webClient/cartBadge.js"></script>
+    <script type="module" src="../../Controller/webClient/main.js"></script>
     <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

@@ -55,6 +55,7 @@
         <div class="row content_header">
           <!-- LOGO -->
           <div class="col-2 content_left">
+            <div class="logo-wrapper">
             <a class="navbar-brand" href="../../index.html">
               <img
                 src="../../assets/images/logoheaderCyberPhone.png"
@@ -62,6 +63,7 @@
                 alt="CyberPhone"
               />
             </a>
+            </div>
           </div>
           <!-- NAVBAR -->
           <div class="col-7 content_center">
@@ -91,7 +93,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link active" href="#" aria-current="page">
+                    <a class="nav-link active" href="" aria-current="page">
                       Product
                     </a>
                   </li>
@@ -105,16 +107,23 @@
                     </a>
                   </li>
                 </ul>
+                <div class="mobile_header_actions">
+                  <button class="cta" type="button">Get a quote</button>
+                  <a class="btn-cart" href="../../view/webClient/cart.html" aria-label="Shopping cart" role="img">
+                    <i class="bi bi-cart3" aria-hidden="true"></i>
+                    <span class="count">10</span>
+                  </a>
+                </div>
               </div>
             </nav>
           </div>
           <!-- BUTTON + CART -->
           <div class="col-3 content_right">
             <button class="cta" type="button">Get a quote</button>
-            <div class="btn-cart" aria-label="Shopping cart" role="img">
+            <a class="btn-cart" href="../../view/webClient/cart.html" aria-label="Shopping cart" role="img">
               <i class="bi bi-cart3" aria-hidden="true"></i>
               <span id="cart-count" class="count">10</span>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -125,7 +134,7 @@
           <div class="col-12">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
                 <li class="breadcrumb-separator" aria-hidden="true">
                   <img src="../../assets/images/arrowRight.svg" alt="" />
                 </li>
@@ -136,12 +145,16 @@
             </nav>
           </div>
           <div class="col-12">
-            <form class="search">
+            <form class="search" id="productSearchForm">
               <input
                 class="input_search"
+                id="productSearchInput"
                 placeholder="What product are you looking for?"
                 type="search"
+                list="productSearchSuggestions"
+                autocomplete="off"
               />
+              <datalist id="productSearchSuggestions"></datalist>
               <button class="btn_search" type="submit">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
@@ -154,10 +167,16 @@
         </div>
       </div>
     </section>
+    <footer class="site_footer">
+      <div class="container">
+        <p>&copy; 2026 CyberPhone. All rights reserved.</p>
+      </div>
+    </footer>
     <!-- jquery + owl carousel -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../../assets/animate/owl.carousel.min.js"></script>
     <!-- js -->
+    <script type="module" src="../../Controller/webClient/cartBadge.js"></script>
     <script type="module" src="../../Controller/webClient/main.js"></script>
     <!-- bootstrap -->
     <script

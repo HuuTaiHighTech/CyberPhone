@@ -1,1 +1,1 @@
-export const URL_API = "https://svcy.myclass.vn/"
+export const URL_API = "https://svcy.myclass.vn"
