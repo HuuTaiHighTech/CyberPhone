@@ -9,7 +9,15 @@ const imageDirectory = "../../assets/images/";
 const getImagePath = (imageName) => {
     const value = imageName.trim();
 
-    if (!value || value.startsWith("http://") || value.startsWith("https://") || value.startsWith("/")) {
+    if (
+        !value
+        || value.startsWith("http://")
+        || value.startsWith("https://")
+        || value.startsWith("/")
+        || value.startsWith("./")
+        || value.startsWith("../")
+        || value.startsWith("assets/")
+    ) {
         return value;
     }
 
