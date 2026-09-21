@@ -1,13 +1,21 @@
 @use '../helpers/variables' as *;
+@use '../helpers/mixins' as mixins;
 
 .cta {
+
+    @include mixins.type-style(title-medium);
     padding: 10px 15px;
+    white-space: nowrap;
+
+    padding: 20px 35px;
+
     background: $gradient-primary;
     // font-size: var(--btn-size);
     // font-weight: var(--btn-weight);
     // list-style: var(--btn-line);
     // color: var(--neutral-100);
     // text-transform: uppercase;
+
     border: 1px solid transparent;
     border-radius: 30px;
     background-size: 200%;

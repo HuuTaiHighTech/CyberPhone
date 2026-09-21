@@ -1,6 +1,6 @@
 //Helpers
 @import "./helpers/variables";
-// @import "./helpers/mixin";
+@import "./helpers/mixins";
 
 //Vendors
 
@@ -8,11 +8,15 @@
 @import "./Base/reset";
 
 //Components
+@import "./components/card";
 
 
 //Layouts
 @import "./layout/header.scss";
+@import "./layout/footer.scss";
+
 
 //Pages
-
+@import "./layout/products";
+@import "./layout/productDetail";
 //Theme

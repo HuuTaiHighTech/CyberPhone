@@ -1,0 +1,14 @@
+export default class ProductService {
+    constructor(){
+        this.arrProduct = []; //mảng đổi tượng sản phẩm
+    }
+
+    /**
+     * Phương thức
+     * input: Đối tượng product
+     * output: Xuất hiện sản phẩm mới trong mảng sản phẩm
+     */
+    getall(){
+       return this.arrProduct;
+    }
+}

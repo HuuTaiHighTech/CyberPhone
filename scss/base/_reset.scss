@@ -7,6 +7,38 @@ html,
 body {
   font-family: "Roboto", sans-serif;
 }
+
+body {
+  @include type-style(body-medium);
+}
+
+h1 {
+  @include type-style(display-small);
+}
+
+h2 {
+  @include type-style(headline-large);
+}
+
+h3 {
+  @include type-style(headline-medium);
+}
+
+h4 {
+  @include type-style(headline-small);
+}
+
+h5 {
+  @include type-style(title-large);
+}
+
+h6 {
+  @include type-style(title-medium);
+}
+
+p {
+  @include type-style(body-medium);
+}
 /* Reset list icons */
 ul,
 ol {
