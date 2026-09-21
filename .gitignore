@@ -1,3 +1,5 @@
 scss/demo.html
 .vscode/
-css
+css/*
+!css/main.css
+!css/cart.css
