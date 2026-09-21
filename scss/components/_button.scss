@@ -1,6 +1,8 @@
 @use '../helpers/variables' as *;
+@use '../helpers/mixins' as mixins;
 
 .cta {
+    @include mixins.type-style(title-medium);
     padding: 10px 15px;
     white-space: nowrap;
     background: $gradient-primary;

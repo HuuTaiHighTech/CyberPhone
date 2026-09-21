@@ -8,6 +8,62 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  font-weight: 400;
+}
+
 /* Reset list icons */
 ul,
 ol {
@@ -126,12 +182,15 @@ html, body {
   object-fit: contain;
 }
 .card .card-title {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  font-weight: 500;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   line-clamp: 2;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  line-height: 1.5;
   min-height: 3em;
   transition: all 0.3s;
 }
@@ -139,12 +198,15 @@ html, body {
   color: #f55f8d;
 }
 .card .card_text {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  font-weight: 400;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   line-clamp: 2;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  line-height: 1.5;
   min-height: 3em;
 }
 .card .card_body > button {
@@ -230,6 +292,10 @@ html, body {
 }
 
 .cta, .section_product .btn_view, .content_header .content_right button {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  font-weight: 500;
   padding: 10px 15px;
   white-space: nowrap;
   background: linear-gradient(to right, #f55f8d 0%, #f8ae56 51%, #f55f8d 100%);
@@ -379,6 +445,10 @@ html, body {
 }
 
 .cta, .content_header .content_right button, .section_product .btn_view {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  font-weight: 500;
   padding: 10px 15px;
   white-space: nowrap;
   background: linear-gradient(to right, #f55f8d 0%, #f8ae56 51%, #f55f8d 100%);
@@ -515,10 +585,12 @@ html, body {
   margin-bottom: 16px;
 }
 .section_product .product_group_title {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+  font-weight: 400;
   margin: 0;
   color: #f55f8d;
-  font-size: 24px;
-  font-weight: 600;
 }
 .section_product .product_item {
   display: flex;
@@ -597,31 +669,38 @@ html, body {
 }
 
 .product-detail-label {
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
   color: #777777;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
 .product-detail-type {
-  color: #f55f8d;
   font-size: 16px;
-  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  font-weight: 500;
+  color: #f55f8d;
   text-transform: uppercase;
 }
 
 .product-detail-name {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0;
+  font-weight: 400;
   margin: 14px 0 20px;
-  font-size: 42px;
-  line-height: 1.2;
 }
 
 .product-detail-description {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
   max-width: 520px;
   color: #666666;
-  font-size: 18px;
-  line-height: 1.8;
 }
 
 .product-detail-meta {
@@ -632,17 +711,23 @@ html, body {
 }
 
 .product-detail-price {
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0;
+  font-weight: 400;
   color: #f55f8d;
-  font-size: 24px;
 }
 
 .product-detail-back {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  font-weight: 500;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   margin-top: 32px;
   color: #f55f8d;
-  font-weight: 600;
 }
 .product-detail-back img {
   width: 18px;
@@ -670,5 +755,8 @@ html, body {
   }
   .product-detail-name {
     font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0;
+    font-weight: 400;
   }
 }/*# sourceMappingURL=main.css.map */
