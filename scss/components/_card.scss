@@ -28,12 +28,12 @@
         object-fit: contain;
     }
     .card-title {
+        @include type-style(title-medium);
         display: -webkit-box;
         -webkit-box-orient: vertical;
         line-clamp: 2;
         -webkit-line-clamp: 2;
         overflow: hidden;
-        line-height: 1.5;
         min-height: 3em;
         transition: all 0.3s;
         &:hover{
@@ -41,12 +41,12 @@
         }
     }
     .card_text {
+        @include type-style(body-medium);
         display: -webkit-box;
         -webkit-box-orient: vertical;
         line-clamp: 2;
         -webkit-line-clamp: 2;
         overflow: hidden;
-        line-height: 1.5;
         min-height: 3em;
     }
     .card_body > button {

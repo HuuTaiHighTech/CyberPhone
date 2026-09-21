@@ -142,10 +142,9 @@
     }
 
     .product_group_title {
+        @include type-style(headline-small);
         margin: 0;
         color: map-get($colors, primary);
-        font-size: 24px;
-        font-weight: 600;
     }
 
     .product_item {
