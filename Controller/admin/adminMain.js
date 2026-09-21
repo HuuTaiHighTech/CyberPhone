@@ -4,6 +4,25 @@ import { Validation } from "./validation.js"
 
 let validation = new Validation();
 let arraySP = [];
+const imageDirectory = "../../assets/images/";
+
+const getImagePath = (imageName) => {
+    const value = imageName.trim();
+
+    if (
+        !value
+        || value.startsWith("http://")
+        || value.startsWith("https://")
+        || value.startsWith("/")
+        || value.startsWith("./")
+        || value.startsWith("../")
+        || value.startsWith("assets/")
+    ) {
+        return value;
+    }
+
+    return `${imageDirectory}${value.replace(/^\.\//, "")}`;
+};
 
 // 1. Hàm hiển thị danh sách
 let hienThiDS = (mangSP) => {
@@ -52,7 +71,7 @@ getListMain();
 
 // 2. Lắng nghe sự kiện gõ URL để Live Preview ảnh
 document.getElementById('img').addEventListener('input', function (e) {
-    let url = e.target.value.trim();
+    let url = getImagePath(e.target.value);
     let preview = document.getElementById('imagePreview');
     if (url) {
         preview.src = url;
@@ -63,7 +82,7 @@ document.getElementById('img').addEventListener('input', function (e) {
 });
 
 document.getElementById('update_img').addEventListener('input', function (e) {
-    let url = e.target.value.trim();
+    let url = getImagePath(e.target.value);
     let preview = document.getElementById('updateImagePreview');
     if (url) {
         preview.src = url;
@@ -81,7 +100,7 @@ let themSP = (e) => {
     let id = document.querySelector('#id').value;
     let name = document.querySelector('#name').value;
     let price = document.querySelector('#price').value;
-    let img = document.querySelector('#img').value;
+    let img = getImagePath(document.querySelector('#img').value);
     let description = document.querySelector('#description').value;
     let type = document.querySelector('#type').value;
 
@@ -144,7 +163,7 @@ let capNhatSP = (e) => {
     let id = document.querySelector('#update_id').value;
     let name = document.querySelector('#update_name').value;
     let price = document.querySelector('#update_price').value;
-    let img = document.querySelector('#update_img').value;
+    let img = getImagePath(document.querySelector('#update_img').value);
     let description = document.querySelector('#update_description').value;
     let type = document.querySelector('#update_type').value;
 
