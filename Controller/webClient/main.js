@@ -1,4 +1,5 @@
 
+
 import { getList } from "./productController.js";
 import { renderData } from "./productView.js";
 import ProductService from '../../Model/webClient/ProductService.js';
@@ -82,3 +83,4 @@ let getListProduct = () => {
     });
 }
 getListProduct();
+

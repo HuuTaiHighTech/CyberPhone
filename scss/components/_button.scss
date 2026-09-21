@@ -1,14 +1,22 @@
 @use '../helpers/variables' as *;
 
 .cta {
+<<<<<<< HEAD
     padding: 10px 15px;
     white-space: nowrap;
+=======
+    padding: 20px 35px;
+>>>>>>> fdf8b182707fadf7cc073df23cf6ee8e00eca7e3
     background: $gradient-primary;
     // font-size: var(--btn-size);
     // font-weight: var(--btn-weight);
     // list-style: var(--btn-line);
     // color: var(--neutral-100);
+<<<<<<< HEAD
     // text-transform: uppercase;
+=======
+    text-transform: uppercase;
+>>>>>>> fdf8b182707fadf7cc073df23cf6ee8e00eca7e3
     border: 1px solid transparent;
     border-radius: 30px;
     background-size: 200%;

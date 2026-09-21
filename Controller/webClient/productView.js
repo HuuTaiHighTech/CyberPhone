@@ -1,4 +1,5 @@
 
+
 const getArrowImagePath = (direction, isActive) => {
     const map = {
         left: {

@@ -96,7 +96,6 @@ html, body {
   overflow-x: hidden;
   max-width: 100%;
 }
-
 .card {
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -233,6 +232,7 @@ html, body {
   padding: 10px 15px;
   white-space: nowrap;
   background: linear-gradient(to right, #f55f8d 0%, #f8ae56 51%, #f55f8d 100%);
+
   border: 1px solid transparent;
   border-radius: 30px;
   background-size: 200%;
@@ -671,4 +671,4 @@ html, body {
   .product-detail-name {
     font-size: 32px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
